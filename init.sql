@@ -1,0 +1,2 @@
+CREATE TABLE nomi (id SERIAL PRIMARY KEY, nome VARCHAR(255));
+INSERT INTO nomi (nome) VALUES ('Tommaso');
