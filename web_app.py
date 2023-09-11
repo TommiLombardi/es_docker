@@ -14,3 +14,7 @@ def hello():
     name = cursor.fetchone()[0]
     conn.close()
     return f"Hello, {name}!"
+
+if __name__ == "__main__":
+    print("DENTRO")
+    app.run(debug=True, host='0.0.0.0')
