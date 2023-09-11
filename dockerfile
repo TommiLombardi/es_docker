@@ -10,5 +10,5 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # Usa CMD per eseguire web_app.py quando il container viene avviato
-CMD [ "flask","--app", "./src/web_app" , "run", "--host=0.0.0.0"]
-
+# CMD [ "flask","--app", "web_app" , "run"]
+CMD ["python", "web_app.py"]
